@@ -52,14 +52,14 @@ const Home: FC<props> = async ({
   };
 
   return (
-    <main className="m-auto my-10 max-w-5xl  space-y-10 px-3">
+    <main className="m-auto my-10 w-full space-y-10  px-10">
       <div className="space-y-5 text-center">
         <h1 className="text-4xl font-extrabold tracking-tight lg:text-5xl">
           {getTitle(filterValues)}{" "}
         </h1>
         <p className="text-muted-foreground">Find your dream job</p>
       </div>
-      <section className="flex flex-col gap-5 lg:flex-row">
+      <section className="flex w-full flex-col gap-5 lg:flex-row">
         <JobFilter defaultValues={filterValues} />
         <JobResults
           filterValues={filterValues}

@@ -58,13 +58,13 @@ const JobResults: FC<props> = async ({ filterValues, page = 1 }) => {
   const [jobs, totalResults] = await Promise.all([jobsPromise, countPromise]);
 
   return (
-    <div>
+    <div className="w-full">
       <div className="flex-1 space-y-5">
         {jobs.map((job, i, arr) => (
           <Link
             key={job.id}
             href={`/jobs/${job.slug}`}
-            className="block cursor-pointer"
+            className="block w-full cursor-pointer"
           >
             <JobList job={job} />
           </Link>

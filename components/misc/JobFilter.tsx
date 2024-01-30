@@ -29,7 +29,7 @@ const JobFilter: FC<JobFilterprops> = async ({ defaultValues }) => {
     )) as string[];
 
   return (
-    <aside className="lg:w-[260px] sticky top-0 h-fit bg-background border rounded-lg ">
+    <aside className="sticky top-0 h-fit rounded-lg border bg-background lg:w-[550px] ">
       <form action={filterJobs} key={JSON.stringify(defaultValues)}>
         <div className="space-y-4 px-5 py-2">
           <div className="flex flex-col gap-4">
@@ -68,7 +68,7 @@ const JobFilter: FC<JobFilterprops> = async ({ defaultValues }) => {
               ))}
             </SelectOwn>
           </div>
-          <div className="flex items-center gap-2 mb-5">
+          <div className="mb-5 flex items-center gap-2">
             <input
               id="remote"
               name="remote"
