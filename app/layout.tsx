@@ -8,7 +8,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  icons: [{ url: "/logo.png", href: "/logo.png" }],
+  icons: [{ url: "/logo.jpg", href: "/logo.jpg" }],
   title: {
     default: "Jobs",
     template: "%s| Flow Jobs ",
